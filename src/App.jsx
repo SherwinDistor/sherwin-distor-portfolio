@@ -9,13 +9,52 @@ function App() {
 					<a href=''>Contact</a>
 				</nav>
 			</header>
-			<main className='flex flex-col items-center gap-15 px-5'>
-				<section id='about'></section>
+			<main className='flex flex-col items-center gap-15 mt-28'>
+				<section id='about' className='relative'>
+					<div className='grid grid-cols-5 grid-rows-5 w-screen h-100 mask-x-from-70% mask-x-to-90% mask-y-from-70% mask-y-to-90%'>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+						<div className='border border-white/15'></div>
+					</div>
+					<div className='absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%] flex gap-5 flex-wrap items-center justify-center'>
+						<img
+							className='rounded-full h-24 w-24 border border-black bg-black'
+							alt=''
+						/>
+						<div>
+							<p>Hello World! I'm</p>
+							<h1 className='text-3xl font-bold'>Sherwin Distor</h1>
+							<p>Software Developer</p>
+						</div>
+					</div>
+				</section>
 				<section id='projects' className='flex flex-col items-center'>
 					<h2 className='text-4xl font-extrabold'>Projects</h2>
 					<div className='w-[80%]'>
 						<div className='flex flex-col items-center gap-4'>
-							<div className='w-64 h-48 bg-black rounded-lg'></div>
+							<img className='w-64 h-48 bg-black rounded-lg' alt='' />
 							<div>
 								<h3 className='text-2xl font-bold'>Weather App</h3>
 								<p>
