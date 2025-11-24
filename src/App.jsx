@@ -69,6 +69,14 @@ function App() {
 					<h2 className='text-4xl font-extrabold mb-5'>Projects</h2>
 					<div className='w-[80%] max-w-[700px] flex flex-col gap-15'>
 						<ProjectCard
+							title='Blog'
+							description='A full stack blog application build with Java (Spring Boot Framework) for implementing the REST API and React to design and add functionality to the front end. The database is Postgresql and uses the Java Persistence API for data access. Spring Security is used for single user sign-in to create categories, tags and posts which can either be saved as a draft or published. React Router is used to create protected routes and the user interface is styled with Tailwind CSS.'
+							imgSrc='/src/assets/blog.png'
+							github='https://github.com/SherwinDistor/java_blog'
+							demo='https://sherwins-blog.netlify.app/'
+						/>
+
+						<ProjectCard
 							title='Resume Creator'
 							description='The Resume Creator is a web application designed to help users generate
 					professional resumes effortlessly. Built with React and styled using
@@ -81,7 +89,7 @@ function App() {
 						/>
 
 						<ProjectCard
-							title='Pokemon Memory Card Game'
+							title='Memory Card Game'
 							description='The Pokémon Card App is a dynamic React-based application that leverages the Pokémon API to provide users with an interactive card matching game. Built using React for the front-end, styled with Tailwind CSS, and deployed on Netlify.'
 							imgSrc='/src/assets/memory-card.png'
 							github='https://github.com/SherwinDistor/odin-memory-card'
