@@ -1,3 +1,5 @@
+import ProjectCard from './components/ProjectCard';
+
 function App() {
 	return (
 		<>
@@ -65,75 +67,26 @@ function App() {
 				</section>
 				<section id='projects' className='flex flex-col items-center'>
 					<h2 className='text-4xl font-extrabold mb-5'>Projects</h2>
-					<div className='w-[80%] max-w-[700px]'>
-						<div className='flex flex-col items-center gap-4 mb-20'>
-							<img
-								className='h-48 rounded-lg'
-								src='/src/assets/odin-cv-application.png'
-								alt='Resume Creator Application'
-							/>
-							<div>
-								<h3 className='text-2xl font-bold'>CV Creator</h3>
-								<p>
-									The CV Creator is a web application designed to help users
-									generate professional resumes effortlessly. Built with React
-									and styled using Tailwind CSS, this project provides an
-									intuitive interface and seamless user experience. Vite is used
-									as the build tool for quick development and optimized
-									performance.
-								</p>
-							</div>
-							<div className='flex gap-4'>
-								<a
-									href='https://github.com/SherwinDistor/odin-cv-application'
-									target='_blank'
-									className='border border-black/7 bg-white/10 rounded-full px-3 py-2'
-								>
-									GitHub
-								</a>
-								<a
-									href='https://odin-cv-application-sherwin.netlify.app/'
-									target='_blank'
-									className='border border-black/7 bg-white/10 rounded-full px-3 py-2'
-								>
-									Live Demo
-								</a>
-							</div>
-						</div>
-						<div className='flex flex-col items-center gap-4'>
-							<img
-								className='h-48 rounded-lg'
-								src='/src/assets/memory-card.png'
-								alt='Pokemon Memory Card Game'
-							/>
-							<div>
-								<h3 className='text-2xl font-bold'>Pokemon Memory Card Game</h3>
-								<p>
-									The CV Creator is a web application designed to help users
-									generate professional resumes effortlessly. Built with React
-									and styled using Tailwind CSS, this project provides an
-									intuitive interface and seamless user experience. Vite is used
-									as the build tool for quick development and optimized
-									performance.
-								</p>
-							</div>
-							<div className='flex gap-4'>
-								<a
-									href='https://github.com/SherwinDistor/odin-memory-card'
-									target='_blank'
-									className='border border-black/7 bg-white/10 rounded-full px-3 py-2'
-								>
-									GitHub
-								</a>
-								<a
-									href='https://odin-memory-card-pokemon-sherwin.netlify.app/'
-									target='_blank'
-									className='border border-black/7 bg-white/10 rounded-full px-3 py-2'
-								>
-									Live Demo
-								</a>
-							</div>
-						</div>
+					<div className='w-[80%] max-w-[700px] flex flex-col gap-15'>
+						<ProjectCard
+							title='Resume Creator'
+							description='The Resume Creator is a web application designed to help users generate
+					professional resumes effortlessly. Built with React and styled using
+					Tailwind CSS, this project provides an intuitive interface and
+					seamless user experience. Vite is used as the build tool for quick
+					development and optimized performance.'
+							imgSrc='/src/assets/odin-cv-application.png'
+							github='https://github.com/SherwinDistor/odin-cv-application'
+							demo='https://odin-cv-application-sherwin.netlify.app/'
+						/>
+
+						<ProjectCard
+							title='Pokemon Memory Card Game'
+							description='The Pokémon Card App is a dynamic React-based application that leverages the Pokémon API to provide users with an interactive card matching game. Built using React for the front-end, styled with Tailwind CSS, and deployed on Netlify.'
+							imgSrc='/src/assets/memory-card.png'
+							github='https://github.com/SherwinDistor/odin-memory-card'
+							demo='https://odin-memory-card-pokemon-sherwin.netlify.app/'
+						/>
 					</div>
 				</section>
 				<section id='contact' className='mb-10 flex flex-col items-center'>
