@@ -1,4 +1,10 @@
 import ProjectCard from './components/ProjectCard';
+import blogScreenshot from './assets/blog.png';
+import githubLogo from './assets/github-mark-white.svg';
+import headshot from './assets/headshot.JPG';
+import linkedInLogo from './assets/icons8-linkedin.svg';
+import memoryCardScreenshot from './assets/memory-card.png';
+import cvScreenshot from './assets/odin-cv-application.png';
 
 function App() {
 	return (
@@ -44,7 +50,7 @@ function App() {
 							<img
 								className='rounded-full h-40 w-40'
 								alt='Sherwin Distor Headshot'
-								src='/src/assets/headshot.JPG'
+								src={headshot}
 							/>
 							<div>
 								<p className='text-center sm:text-right'>Hello World👋 I'm</p>
@@ -71,7 +77,7 @@ function App() {
 						<ProjectCard
 							title='Blog'
 							description='A full stack blog application build with Java (Spring Boot Framework) for implementing the REST API and React to design and add functionality to the front end. The database is Postgresql and uses the Java Persistence API for data access. Spring Security is used for single user sign-in to create categories, tags and posts which can either be saved as a draft or published. React Router is used to create protected routes and the user interface is styled with Tailwind CSS.'
-							imgSrc='/src/assets/blog.png'
+							imgSrc={blogScreenshot}
 							github='https://github.com/SherwinDistor/java_blog'
 							demo='https://sherwins-blog.netlify.app/'
 						/>
@@ -83,7 +89,7 @@ function App() {
 					Tailwind CSS, this project provides an intuitive interface and
 					seamless user experience. Vite is used as the build tool for quick
 					development and optimized performance.'
-							imgSrc='/src/assets/odin-cv-application.png'
+							imgSrc={cvScreenshot}
 							github='https://github.com/SherwinDistor/odin-cv-application'
 							demo='https://odin-cv-application-sherwin.netlify.app/'
 						/>
@@ -91,7 +97,7 @@ function App() {
 						<ProjectCard
 							title='Memory Card Game'
 							description='The Pokémon Card App is a dynamic React-based application that leverages the Pokémon API to provide users with an interactive card matching game. Built using React for the front-end, styled with Tailwind CSS, and deployed on Netlify.'
-							imgSrc='/src/assets/memory-card.png'
+							imgSrc={memoryCardScreenshot}
 							github='https://github.com/SherwinDistor/odin-memory-card'
 							demo='https://odin-memory-card-pokemon-sherwin.netlify.app/'
 						/>
@@ -110,7 +116,7 @@ function App() {
 								className=''
 							>
 								<img
-									src='/src/assets/github-mark-white.svg'
+									src={githubLogo}
 									alt='GitHub'
 									className='w-10 border rounded-md border-black/7 bg-white/10 p-1 shadow-2xs backdrop-blur-md'
 								/>
@@ -121,7 +127,7 @@ function App() {
 								alt='LinkedIn'
 							>
 								<img
-									src='/src/assets/icons8-linkedin.svg'
+									src={linkedInLogo}
 									alt='LinkedIn'
 									className='w-10 border rounded-md border-black/7 bg-white/10 p-1 shadow-2xs backdrop-blur-md'
 								/>
