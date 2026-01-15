@@ -5,6 +5,7 @@ import headshot from './assets/headshot.JPG';
 import linkedInLogo from './assets/icons8-linkedin.svg';
 import memoryCardScreenshot from './assets/memory-card.png';
 import cvScreenshot from './assets/odin-cv-application.png';
+import tabletalk from './assets/tabletalk.png';
 
 function App() {
 	return (
@@ -74,6 +75,14 @@ function App() {
 				<section id='projects' className='flex flex-col items-center'>
 					<h2 className='text-4xl font-extrabold mb-5'>Projects</h2>
 					<div className='w-[80%] max-w-[700px] flex flex-col gap-15'>
+						<ProjectCard
+							title='TableTalk Review'
+							description='Built with Java and the Spring Boot Framework on the backend and React on the frontend, TableTalk is a review web app where users can rate and review their favorite restaurants. The Cloudinary API is used to store and retrieve restaurant related images and Postgresql is used to persist restaurant, user, and review data. TableTalk is secured using bearer tokens for authentication and role based authorization. (To view demo site, please allow 30s for backend service to boot up.)'
+							imgSrc={tabletalk}
+							github='https://github.com/SherwinDistor/restaurant_review_platform'
+							demo='https://tabletalkreview.netlify.app/'
+						/>
+
 						<ProjectCard
 							title='Blog'
 							description='A full stack blog application build with Java (Spring Boot Framework) for implementing the REST API and React to design and add functionality to the front end. The database is Postgresql and uses the Java Persistence API for data access. Spring Security is used for single user sign-in to create categories, tags and posts which can either be saved as a draft or published. React Router is used to create protected routes and the user interface is styled with Tailwind CSS.'
